@@ -1,7 +1,7 @@
 {
   "name": "rest-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "With this homework we would learn how to create a REST server.",
   "main": "index.js",
   "scripts": {
     "ci:test": "npm-run-all -p -r start test",
@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoSerrano23/hyf-homework-nodejs-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RodrigoSerrano23/hyf-homework-nodejs-3/issues"
+  },
+  "homepage": "https://github.com/RodrigoSerrano23/hyf-homework-nodejs-3#readme"
 }
