@@ -31,6 +31,24 @@ app.get('/user/:id', function (request, response){
     );
   });
 
+app.delete('/user/:id', function(request,response){
+    const users = user.find(us => us.id == request.params.id);
+  if (users){
+    response.status(202).json({
+      success: true,
+      message: 'User Exist',
+      users
+    });
+    user.pop();
+  }else{
+    response.status(204).json({
+        success:false,
+        message: 'User not Exist',
+    });
+
+    }
+});
+
 
 
 app.listen(port, (err) => {
